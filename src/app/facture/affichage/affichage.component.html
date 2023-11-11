@@ -1,0 +1,69 @@
+<div class="container">
+  <section>
+    <app-ajout-clt (newClientEvent)="addClient($event)"></app-ajout-clt>
+  </section>
+
+  <section class="jumbotron">
+    <h1>Facture</h1>
+    <div class="form-group">
+      <label for="selectedClient">Client:</label>
+      <select id="selectedClient" [(ngModel)]="selectedClient" class="form-control">
+        <option *ngFor="let client of clients" [ngValue]="client">{{ client.name }}</option>
+      </select>
+    </div>
+  </section>
+
+  <section class="row">
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Description</th>
+          <th>Qty</th>
+          <th>Price</th>
+          <th>Total</th>
+          <th>Delete</th>
+          <th>Details</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of items; let indexOfelement = index">
+          <td>
+            <input type="text" [(ngModel)]="item.name" class="form-control" />
+          </td>
+          <td>
+            <input type="text" [(ngModel)]="item.description" class="form-control" />
+          </td>
+          <td>
+            <input type="number" [(ngModel)]="item.qty" class="form-control" />
+          </td>
+          <td>
+            <input type="number" [(ngModel)]="item.price" class="form-control" />
+          </td>
+          <td>{{ item.qty * item.price }} TND</td>
+          <td>
+            <button type="button" class="btn btn-danger" (click)="remove(indexOfelement)">
+              Delete
+            </button>
+          </td>
+          <td>
+            <a [routerLink]="['detail']" [queryParams]="{ item: item | json }" class="btn btn-default">
+              Détail
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button type="button" class="btn btn-primary" (click)="add()">
+              Add item
+            </button>
+          </td>
+          <td></td>
+          <td></td>
+          <td>Total :</td>
+          <td>{{ total() }} TND</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+</div>

@@ -1,0 +1,11 @@
+<div class="card mx-auto" style="width: 30rem;">
+    <div class="card-header">
+      {{ item.name | uppercase }} Details
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">{{ item.description | lowercase }}</li>
+      <li class="list-group-item">In stock: {{ item.qty }}</li>
+      <li class="list-group-item">{{ item.price | currency:'TND' }}</li>
+    </ul>
+  </div>
+  
