@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # MyFirstApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.5.
@@ -63,3 +64,7 @@ This project is licensed under the [MIT License](LICENSE).
 
 For inquiries, please contact [Your Name] at [your.email@example.com].
 >>>>>>> 763da8aac3e608e3ffa508324187f7314089f902
+=======
+# First-Application
+Angular-powered invoicing app: Seamlessly manage invoices with client selection, item details, and real-time total calculations. Leverages Angular's two-way data binding and modular components for a dynamic and user-friendly experience. Ideal for showcasing modern web development principles
+>>>>>>> cc93a8d83942966c8bc55df87c0cfac2c83bac3b
