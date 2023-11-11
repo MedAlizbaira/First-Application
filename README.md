@@ -1,8 +1,14 @@
 # InvoiceSwiftAngular
 
 Angular Invoice Manager is a dynamic web application that exemplifies modern web development practices using the Angular framework.
+
+## Demo
+
+Check out the live demo of the project: [InvoiceSwiftAngular Demo](https://invoiceswift-angular.vercel.app/)
+
 ## Screenshots
- ![Interfaces Acceuil](https://res.cloudinary.com/dkrfmqbj1/image/upload/v1699717285/Angular-Invoice-Manager/j5ju34lrbi6bc3a4sji3.png)
+![Interfaces Acceuil](https://res.cloudinary.com/dkrfmqbj1/image/upload/v1699717285/Angular-Invoice-Manager/j5ju34lrbi6bc3a4sji3.png)
+
 ## Features
 
 - **Invoicing:** Create, manage, and detail invoices effortlessly.
@@ -32,4 +38,4 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Contact
 
-For inquiries, please contact [Your Name] at [your.email@example.com].
+For inquiries, please contact Mohamed Ali Zbaira at Mohamedalizbaira@gmail.com
